@@ -6,7 +6,7 @@ import {
   XIcon,
 } from "react-share";
 import { base_url } from "../../App";
-import styles from "./ShareButtonGroup.module.css";
+import styles from "./shareButtonGroup.module.css";
 import CopyToClipboard from "react-copy-to-clipboard";
 
 const ShareButtonGroup = ({ testParam, resultParam, renderTestInfo }) => {
