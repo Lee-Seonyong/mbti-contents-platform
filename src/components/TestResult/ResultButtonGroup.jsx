@@ -7,6 +7,9 @@ import styles from "./resultButtonGroup.module.css";
 
 const ResultButtonGroup = ({ testParam, resultParam }) => {
   const navigate = useNavigate();
+  const onClickCopyUrlButton = () => {
+    alert("복사되었습니다.");
+  };
   const onClickRedoButton = () => {
     navigate(`/${testParam}`);
   };
@@ -19,10 +22,7 @@ const ResultButtonGroup = ({ testParam, resultParam }) => {
         <CopyToClipboard
           text={`/${base_url}/${testParam}/result/${resultParam}`}
         >
-          <button
-            className={styles.upperButton}
-            onClick={() => alert("복사 되었습니다.")}
-          >
+          <button className={styles.upperButton} onClick={onClickCopyUrlButton}>
             <LinkOutlined />
             &nbsp; 링크 복사
           </button>

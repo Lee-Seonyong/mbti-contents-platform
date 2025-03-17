@@ -18,7 +18,7 @@ function Intro({ info, setMode }) {
         </span>
         를 시작해보세요!
       </p>
-      <IntroButtonGroup />
+      <IntroButtonGroup testParam={info?.mainUrl} />
     </div>
   );
 }
